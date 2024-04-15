@@ -1,4 +1,4 @@
-version: '3'
+version: '1.0.0'
 services:
   nestjs_app:
     build:
@@ -10,6 +10,12 @@ services:
       - redis
     environment:
       - REDIS_URL=redis://redis:6379
+      - NODE_ENV=${NODE_ENV}
+      - DB_DATABASE=${DB_DATABASE}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
 
   redis:
     image: redis

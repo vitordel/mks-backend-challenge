@@ -13,6 +13,12 @@ RUN npm install
 # Copie o restante dos arquivos para o diretório de trabalho
 COPY . .
 
+# Copia o arquivo .env para dentro do contêiner
+COPY .env ./.env
+
+# Usa uma variável de ambiente do arquivo .env no Dockerfile
+ENV NODE_ENV=${NODE_ENV}
+
 # Expõe a porta 3000 para acessar a aplicação
 EXPOSE 3000
 
