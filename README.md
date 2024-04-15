@@ -27,9 +27,6 @@ Este é um projeto desenvolvido como parte de um desafio de back-end para criar 
    - Configure as variáveis de ambiente no arquivo `.env` para se conectar ao banco de dados PostgreSQL.
    - Certifique-se de ter o PostgreSQL instalado e em execução em sua máquina ou em um contêiner Docker.
 
-3. **Configuração do Redis**:
-   - Não é necessária nenhuma configuração adicional para o Redis, pois ele é utilizado como cache e está configurado automaticamente.
-
 ## Executando o Projeto
 
 1. **Modo de Desenvolvimento**:
